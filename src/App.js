@@ -9,7 +9,7 @@ import OfertasEnLocales from "./pages/ofertas";
 import SobreNosotros from "./pages/nosotros";
 import Contactos from "./pages/contactos";
 import Error from "./pages/Error";
-
+import GallerySection from "./pages/galeria";
 
 function App() {
   return (
@@ -23,10 +23,12 @@ function App() {
         <Route path="/ofertas" element={<OfertasEnLocales />} />
         <Route path="/nosotros" element={<SobreNosotros />} />
         <Route path="/contactos" element={<Contactos />} />
+        <Route path="/galeria" element={<GallerySection />} />
         <Route path="/" element={<Error />} />
       </Routes>
       <Footer />
       </BrowserRouter>
+      
     </div>
   );
 }
